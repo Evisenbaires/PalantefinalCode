@@ -12,8 +12,8 @@
 *  cuyos valores asigna por defecto el navegador.
 */
 
-Reset 
-* {
+Reset {
+ 
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -142,14 +142,21 @@ section {
     font-size: 20px;
     margin-top: 16px;
     font-weight: 700;
+
 }
+.btn-CV:hover {
+    background-color: #25ec74;
+    transition: 0.3s;
+}
+
+
 .enlaces-img {
     display: flex;
     margin-top: 100px;
     width: 100px; height: 100px;
     padding: 20px;
     margin-left: 27%;
-    justify-content: last baseline;
+    justify-content: center;
         
 }
 .email {
@@ -169,3 +176,27 @@ section {
     color: black;
     background-color: #79f3aa;
 }
+
+/*Media queries #2Sec74*/
+@media (min-width: 1024px) {
+  
+    h1 {
+        font-size: 48px;
+        text-align: left;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    #inicio {
+        flex-direction: row;
+    }
+    .presentacion {
+        width: 50%;
+        text-align: left ;
+
+    }
+    .presentacion p {
+        text-align: left;
+    }   
+}
+
